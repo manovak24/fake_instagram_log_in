@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: blue;
+}
+
+.content-ctr {
+    width: 300px;
+    margin: auto;
+}
+
+.logo {
+    width: 80%;
+}
+
+.top-ctr {
+    background-color: green;
+    text-align: center;
+}
+
+.log-in-ctr {
+    background-color: aqua;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
