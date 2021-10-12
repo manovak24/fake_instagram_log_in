@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,11 +12,14 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
-    width: 90%;
+    width: 350px;
     height: 90%;
     margin: auto;
-    background-color: blue;
 }
 
 .content-ctr {
@@ -28,15 +32,100 @@ body {
 }
 
 .top-ctr {
-    background-color: green;
     text-align: center;
 }
 
-.log-in-ctr {
-    background-color: aqua;
-}
-
-.form {
+.log-in {
     display: flex;
     flex-direction: column;
+}
+
+input[type="password"], input[type="email"] {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #B2DFFC;
+    border-radius: 3px;
+    border: none;
+    padding: 6px 0;
+    font-size: 14px;
+    color: white;
+    margin-top: 14px;
+}
+
+.alt-log-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+}
+
+.alt-log-in div {
+    height: 1px;
+    width: 40%;
+    background-color: rgba(var(--b38,219,219,219),1)
+}
+
+.facebook-log-in {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.fa {
+    font-size: 30px;
+    color: #385185;
+}
+
+.facebook-log-in a {
+    color: #385185;
+}
+
+.facebook-log-in > div {
+    margin-top: 20px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.sign-up > a {
+    margin-left: 5px;
+    color: #4BB0F9;
+}
+
+.download-ctr {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.app-store {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app-store-link > img {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.footer-ctr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.footer-ctr > a {
+    margin: 5px;
+    color: rgb(143, 143, 143);
 }
