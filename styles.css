@@ -16,11 +16,10 @@ a {
     text-decoration: none;
 }
 
-
-
-.outer-container {
-    width: 93%;
+.container {
+    width: 90%;
     height: 100%;
+    margin: auto;
 }
 
 .content-ctr {
@@ -143,7 +142,7 @@ input[type="submit"] {
     margin: 5px;
 }
 
-.footer-ctr {
+.footer-container {
     padding-bottom: 55px;
     width: 100%;
 }
@@ -211,7 +210,7 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 850px) {
-    .outer-container {
+    .container {
         width: 700px;
     }
     
@@ -222,13 +221,13 @@ input[type="submit"] {
 
     .content-ctr {
         width: 50%;
-        margin: 0;
+        margin: 0 0 0 10px;
     }
 
     .phone-image-ctr {
         width: 50%;
-        background: right / 100% url('https://assets.codepen.io/6060109/IG-phone.jpeg');
-        margin-top: 45px;
+        background: right / 95% url('https://assets.codepen.io/6060109/IG-phone.jpeg');
+        margin-top: 55px;
         margin-right: 10px;
     }
 }
