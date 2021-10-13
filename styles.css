@@ -21,11 +21,10 @@ a {
 .outer-container {
     width: 93%;
     height: 100%;
-    
 }
 
 .content-ctr {
-    max-width: 350px;
+    width: 350px;
     margin: auto;
 }
 
@@ -84,7 +83,7 @@ input[type="submit"] {
 
 .facebook-log-in {
     text-align: center;
-    margin-top: 4px;
+    margin-top: 10px;
 }
 
 .fa {
@@ -110,7 +109,7 @@ input[type="submit"] {
     color: #385185;
 }
 
-.sign-up-ctr {
+.sign-up {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -119,17 +118,17 @@ input[type="submit"] {
     
 }
 
-.sign-up-ctr > a {
+.sign-up > a {
     margin-left: 5px;
     color: #4BB0F9;
 }
 
-.download-ctr {
+.download {
     text-align: center;
     
 }
 
-.download-ctr > p {
+.download > p {
     margin-bottom: 15px;
 }
 
@@ -145,7 +144,7 @@ input[type="submit"] {
 }
 
 .footer-ctr {
-    padding-bottom: 32px;
+    padding-bottom: 55px;
     width: 100%;
 }
 
@@ -171,7 +170,7 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     color: rgb(143, 143, 143);
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 12px;
 }
 
@@ -185,7 +184,7 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 450px) {
-    .content-ctr {
+    .content-user-info {
         background-color: white;
         border: 1px solid rgb(219, 219, 219);
         border-radius: 3px;
@@ -194,7 +193,7 @@ input[type="submit"] {
 
     }
 
-    .sign-up-ctr {
+    .sign-up {
         background-color: white;
         border: 1px solid rgb(219, 219, 219);
         border-radius: 3px;
@@ -205,16 +204,31 @@ input[type="submit"] {
     }
 }
 
+@media screen and (min-width: 525px) {
+    .content-user-info {
+        margin-top: 70px;
+    }
+}
+
 @media screen and (min-width: 850px) {
     .outer-container {
-        width: 750px;
+        width: 700px;
+    }
+    
+    .sub-container {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .content-ctr {
+        width: 50%;
+        margin: 0;
     }
 
     .phone-image-ctr {
-        width: 100%;
-        height: 100%;
-        margin-top: 50px;
-        background: 100% / cover url('https://assets.codepen.io/6060109/IG-phone.jpeg');
+        width: 50%;
+        background: right / 100% url('https://assets.codepen.io/6060109/IG-phone.jpeg');
+        margin-top: 45px;
+        margin-right: 10px;
     }
 }
