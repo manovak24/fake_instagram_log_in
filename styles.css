@@ -5,11 +5,8 @@
 }
 
 body {
-    height: 100vh;
     background-color: #FAFAFA;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 a {
@@ -17,13 +14,18 @@ a {
 }
 
 .container {
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    min-height: 100vh;
     margin: auto;
+    position: relative;
+}
+
+.sub-container {
+    padding-bottom: 200px;
 }
 
 .content-ctr {
-    width: 350px;
+    max-width: 350px;
     margin: auto;
 }
 
@@ -143,14 +145,17 @@ input[type="submit"] {
 }
 
 .footer-container {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
     padding-bottom: 55px;
-    width: 100%;
+    max-width: 750px;
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;    
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 50px;
     padding-left: 16px;
     padding-right: 16px;
